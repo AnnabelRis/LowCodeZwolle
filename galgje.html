@@ -1,11 +1,19 @@
+<html>
+<head>
 <script>
 	var aantalpogingen = 10;
 	function raden(){
+		var deDOM = document.getElementsByTagName("html");
+		console.log(deDOM); 
 		var x=document.getElementById("geradenletter").value;
+		var uitkomst=document.getElementById("uitkomstdiv");
+		uitkomst.innerHTML = "ff testen"
 		if(x=="f"||x=="i"||x=="e"||x=="t"||x=="s"){
-			alert("Goed");
+			uitkomst.innerHTML = "Goed";
+			uitkomst.style.backgroundColor = "green";
 		} else {
-			alert("Fout");
+			uitkomst.innerHTML = "Fout";
+			uitkomst.style.backgroundColor = "red";
 			aantalpogingen--;
 		}
 		console.log(aantalpogingen);
@@ -15,8 +23,13 @@
 		}		
 	}
 </script>
-<img src="galgje.png"/></img>
+</head>
+<body>
+<img src="galgje.png"></img>
 <br></br>
 <div>.....</div>
 <input id=geradenletter value=start>
 <input value=raden type=button onclick=raden()>
+<div id=uitkomstdiv>uitkomst</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+	function inchecken(){
+		var deDOM = document.getElementsByTagName("html");
+		console.log(deDOM); 
+		var x=document.getElementById("genoegsaldo").value;
+		var saldo=document.getElementById("saldodiv");
+		var automaatLocatie=getElementById("äfbeelding");
+		saldo.innerHTML = "ff testen";
+		if(x>10){
+			saldo.innerHTML = "U kunt reizen met de NS";
+			saldo.style.backgroundColor = "green";
+			afbeelding.src = "trein.jpg";
+		} else {
+			saldo.innerHTML = "Uw salso is "+x+" euro, laat je OV chipkaart op bij bovenstaande betaalautomaat!";
+			saldo.style.backgroundColor = "red";
+			afbeelding.src = "oplaadautomaat.jpg";
+		}	
+		if automaatLocatie.src = "oplaadautomaat.jpg"{
+			
+		}
+	}
+</script>
+</head>
+<body>
+<img src="poort.jpg" id=afbeelding width=50%></img>
+<br></br>
+<input id=genoegsaldo value="voer saldo in">
+<input value=check type=button onclick=inchecken()>
+<div id=saldodiv></div>
+</body>
+</html>
