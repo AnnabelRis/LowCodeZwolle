@@ -1,11 +1,22 @@
 <script>
+	var aantalpogingen = 10;
 	function raden(){
 		var x=document.getElementById("geradenletter").value;
-		alert(x);
+		if(x=="f"||x=="i"||x=="e"||x=="t"||x=="s"){
+			alert("Goed");
+		} else {
+			alert("Fout");
+			aantalpogingen--;
+		}
+		console.log(aantalpogingen);
+		if (aantalpogingen == 0){
+			alert("Je bent dood, begin opnieuw");
+			aantalpogingen = 10;
+		}		
 	}
 </script>
 <img src="galgje.png"/></img>
 <br></br>
 <div>.....</div>
-<input id=geradenletter value=beginnen>
+<input id=geradenletter value=start>
 <input value=raden type=button onclick=raden()>
