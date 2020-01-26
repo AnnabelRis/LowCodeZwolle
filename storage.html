@@ -1,0 +1,26 @@
+<html>
+   <head>
+       <script>
+           var x = localStorage.getItem("onsgetal");
+           function raden(){
+               print(x++);
+               localStorage.setItem("onsgetal", x);
+           }
+           function print(tekst){
+               document.getElementById("output").innerHTML = "<br>"+tekst;
+           }
+ 
+           function toonStorage(){
+               alert(localStorage.getItem("onsgetal"));
+           }
+       </script>
+       <style>
+      
+       </style>
+   </head>
+   <body>
+       <input value=optellen type=button onclick=raden() >
+       <input value=ophalen type=button onclick=toonStorage() >
+       <div id=output></div>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+         function klikken(){
+            console.log("Je hebt geklikt");
+            ffloopen();
+         }
+
+          function ffloopen(){
+              for(var x=document.getElementById("waarde").value; x>0; x--){
+                     console.log(x);
+              }
+          }
+
+     </script>
+    </head>
+    <body>
+        <input id=waarde value="klik">
+        <button type="button" onclick=klikken()>Klik op mij!</button>
+    </body>
+</html>

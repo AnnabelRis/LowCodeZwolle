@@ -1,0 +1,32 @@
+<html>
+   <head>
+       <script>
+           function raden(){
+                var sport = {};
+                sport.balsport = true;
+                sport.sportnaam = "voetbal";
+                sport.wedstrijdlengte = 50;
+                sport.veldlengte = 100;
+                console.log(sport);
+                checkSport(sport);
+           }
+
+           function checkSport(deSport){
+                alert(deSport.balsport);
+                alert(deSport.sportnaam);
+                if (deSport.balsport){
+                    console.log("pomp meenemen");
+                }
+           }
+
+       </script>
+       <style>
+      
+       </style>
+   </head>
+   <body>
+       <input value=optellen type=button onclick=raden() >
+       <input value=ophalen type=button onclick=toonStorage() >
+       <div id=output></div>
+   </body>
+</html>

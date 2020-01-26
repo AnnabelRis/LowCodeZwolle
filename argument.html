@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+          function klikken(){
+              console.log("Je hebt geklikt");
+              aftrekken(8, 7); //argument zit bij de aanroep
+              aftrekken(14, 3); //argument
+          }
+
+         function aftrekken(eerstegetal, tweedegetal){ // parameter bij de definitie
+              var totaal = eerstegetal / tweedegetal;
+              console.log("Uitkomst is "+totaal+ " in totaal");
+          }
+     </script>
+    </head>
+    <body>
+        <button type="button" onclick=klikken()>Klik op mij!</button>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+   <head>
+       <script>
+           function oefening(){
+               dogYears(27);
+               loopje();
+               boodschappen();
+               var student = uitslag();
+           console.log(student);
+          
+           }
+           function dogYears() {
+               var leeftijdsInvoer = document.getElementById("invoer").value;
+               vertelLeeftijd(leeftijdsInvoer);
+           }       
+           function vertelLeeftijd(leeftijd){   
+               var myDogYear = leeftijd * 7;
+               var hondjaar = document.getElementById("dogYear");
+               hondjaar.innerHTML = "Mijn leeftijd is "+leeftijd+" jaar en dat is "+myDogYear+" jaar in hondenjaren.";
+               console.log("Mijn leeftijd is "+leeftijd+" jaar en dat is "+myDogYear+" jaar in hondenjaren.");
+           }
+
+        
+           function loopje(){
+           for (var i = 0; i < 5; i++){
+               console.log(i);
+               }
+           }
+           function boodschappen(){
+           var mijnArray = ["Pindakaas", "Wijn", "Brocolli", "Pasta"]
+           console.log(mijnArray[1]);
+           for(var r=0; r < mijnArray.length; r++){
+               console.log("Ik moet het volgende halen: "+ mijnArray[r]);
+           }
+       }
+       function uitslag(){
+           return "geslaagd";
+       }
+   
+      
+       </script>
+   </head>
+   <body>
+       <div>
+           <input id=invoer>
+           <input value=jaar type=button onclick=dogYears()>
+           <div id="dogYear">Wat is mijn leeftijd in hondenjaren?</div>
+       </div>
+    
+      <button onclick=oefening()>Check hier</button>
+   </body>
+</html>

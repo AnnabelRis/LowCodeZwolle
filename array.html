@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+// som van de array getallen bij elkaar optellen en dit weergeven in de div
+<html>
+    <head>
+     <script>
+          function klikken(){
+            console.log("Je hebt geklikt");
+            lievelingsGetallen();
+            var divWaarde=document.getElementById("div");
+            divWaarde.innerHTML = "testen";
+          }
+
+          function lievelingsGetallen(){
+              var mijnArray = [2,4,9,7,93];
+              console.log(mijnArray[0]);
+              for (var r =0; r+mijnArray[2]; r++){
+                divWaarde.innerHTML ="De som is "+r;
+              }
+          }
+
+     </script>
+    </head>
+    <body>
+        <button type="button" onclick=klikken()>Klik op mij!</button>
+        <div id=div>Hallo</div>
+    </body>
+</html>
+
+var x=0;
+function raden(){
+    console.log(x++);
+    localstorage.setItem("onsgetal", x);
+}

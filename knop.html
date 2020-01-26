@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script>
-        function klikken(){
-            alert("je hebt geklikt")
-        }
-    </script>
-</head>
-<body>
-<button type="button" onclick=klikken()>Klik op mij!</button>
-</body>
+    <head>
+     <script>
+           function klikken(){
+              console.log("Je hebt geklikt");
+              rekenen(8, 7); //argument
+              rekenen(14, 3); //argument
+          //    ffloopen();
+              verzameling();
+              var deTekst = geefmijiets(); 
+              console.log(deTekst);
+          }
+          function verzameling(){
+              var mijnArray = [5,14,22,7,5];
+              console.log(mijnArray[0]);
+              for (var r =0; r < mijnArray.length; r++){
+                  console.log("inArray"+ mijnArray[r]);
+              }
+          }
+
+          function geefmijiets(){
+              return "jojo";
+          }
+
+          // DRY dont repeat yourself
+         function ffloopen(){
+              for(var x=0; x<100; x++){
+                     console.log(x);
+              }
+          }
+
+          function rekenen(eerstegetal, tweedegetal){ // [parameter]
+ //           var getal1 = 17;
+ //           var getal2 = 4;
+              var totaal = tweedegetal + eerstegetal;
+              console.log("Uitkomst is "+totaal+ " in totaal");
+          }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick=klikken()>Klik op mij!</button>
+    </body>
 </html>

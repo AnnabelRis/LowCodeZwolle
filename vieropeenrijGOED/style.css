@@ -1,0 +1,40 @@
+.game-square{
+  		height: 50px;
+  		width: 50px;
+    margin: 2px;
+    background-color: white;
+		border-radius: 200px 200px 200px 200px;
+	    -moz-border-radius: 200px 200px 200px 200px;
+		-webkit-border-radius: 200px 200px 200px 200px;
+		font-family: arial;
+		font-size: 30px;
+		text-align: center;
+}
+
+.flexbox{
+  background-color: darkblue;
+  display: -webkit-flex;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+   justify-content: space-between;
+}
+
+.red{
+  border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+  background-color: red;
+}
+
+.green{
+  border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+  background-color:yellow;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+     <script>
+        var code ="0120";
+        var testcode="1";
+        function maakGeel(){
+          if (testcode="0"){
+            var mijnKnoppie = document.getElementById("klik");
+            vak1.style.backgroundColor = "yellow";
+          } else{
+            vak1.style.backgroundColor = "white";
+          }
+        }
+
+     </script>
+     <style>
+       td{
+         border: 2px solid red;
+         width: 40px;
+         height: 40px;
+       }
+     </style>
+    </head>
+    <body>
+        <table id="mastermind">
+            <tr>
+              <td id="vak1"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            </table>
+            <button id="klik" value="klik hier" onclick="maakGeel()"></button>
+    </body>
+</html>
+
+

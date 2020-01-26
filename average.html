@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script>
+        var bingo = [];
+        
+        function aanvullen(){
+            var toevoeging = parseInt(document.getElementById("waarde").value);
+            bingo.push(toevoeging);
+            console.log(bingo);
+            var total = 0;
+            for(var i = 0; i < bingo.length; i++) {
+             total += bingo[i];
+            }
+            var avg = total / bingo.length;
+            console.log(avg);
+        
+        }
+    
+    
+    </script>
+<style>
+ 
+</style>
+</head>
+<body>
+<input id="waarde">
+<input id="knop" type=button value="toevoegen" onclick="aanvullen()">
+</body>
+</html>
